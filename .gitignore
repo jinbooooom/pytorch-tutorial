@@ -8,6 +8,11 @@ data/*
 **/*.out
 *.h.gch
 
+.DS_Store
+tools
+*_old
+
+
 r
 s
 t
