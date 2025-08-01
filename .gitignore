@@ -1,3 +1,5 @@
+.venv/
+.specstory/
 .idea/*
 data/*
 **/exec

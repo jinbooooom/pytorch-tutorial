@@ -4,9 +4,11 @@
 #
 # And then the virtual environment can be created by running:
 #
-# python3 -m venv .venv
-# .venv/bin/pip install --upgrade pip
-# .venv/bin/pip install -r requirements.txt
+# 虚拟环境为 .venv, 在使用 VS Code 等 IDE 时，.venv 是推荐的虚拟环境目录名，IDE 可以自动检测并使用它。
+# python3 -m venv .venv 
+# .venv/bin/pip install --upgrade pip -i https://pypi.tuna.tsinghua.edu.cn/simple
+# 使用清华镜像需要增加 -i https://pypi.tuna.tsinghua.edu.cn/simple
+# .venv/bin/pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 #
 # Then use .venv/bin/python to run the various training scripts.
 
@@ -15,7 +17,8 @@ diskcache==4.1.0
 h5py
 jupyter
 matplotlib
-numpy<=1.16.4
+# numpy<=1.16.4
+numpy
 Pillow
 scikit-image>=0.15.0
 scipy
